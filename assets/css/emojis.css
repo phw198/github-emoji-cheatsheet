@@ -1,19 +1,39 @@
-img.emoji-img {
+/**************************
+ * Emoji Animation Styles *
+ **************************/
+
+ img.emoji-img {
     width: 25px;
     vertical-align: bottom;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
 
-img.emoji-img.rotate-90 {
-    transform: rotate(90deg);
+img.emoji-img.enlarge {
+    transform: scale(1.4);
 }
 
-img.emoji-img.rotate-180 {
-    transform: rotate(180deg);
+img.emoji-img.shrink {
+    transform: scale(0.7);
 }
 
-.toc2 {
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+/* This class triggers the animation once */
+.pulse-animation {
+    animation: pulse 0.4s ease-in-out;
+}
+
+
+/****************************
+ * Table of Contents Styles *
+ ****************************/
+
+ .toc2 {
     font-size: 14px;
 }
 
