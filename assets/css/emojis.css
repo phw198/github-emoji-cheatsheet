@@ -17,16 +17,20 @@ img.emoji-img.rotate-180 {
     font-size: 14px;
 }
 
-#main_content ul li p {
-    margin: 0px;
-    display: unset;
+#main_content h1 {
+    margin-top: 2em;
 }
-#main_content ul li ul li p {
-    margin: 0px;
-    display: unset;
-}
+
 #main_content ul ul {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+#main_content ul ul.hidden {
+    max-height: 0;
+}
+#main_content ul ul:not(.hidden) {
+    max-height: 2000px;
 }
 #main_content ul li {
     list-style: none;
