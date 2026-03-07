@@ -6,12 +6,18 @@ layout: default
 
 ## Table of Contents
 
+<script src="{{ '/assets/js/emoji-rotate.js' | relative_url }}"></script>
+
+<ul>
 {% for category in site.data.emojis-unicode %}
-- [{{ category[0] }}](#{{ category[0] | slugify }})
+<li class="toc1"><a href="#{{ category[0] | slugify }}">{{ category[0] }}</a></li>
+  <ul id="{{ category[0] }}">
 {% for subcategory in category[1] %}
-  - [{{ subcategory[0] }}](#{{ subcategory[0] | slugify }})
+  <li class="toc2"><a href="#{{ subcategory[0] | slugify }}">{{ subcategory[0] }}</a></li>
 {% endfor %}
+  </ul>
 {% endfor %}
+</ul>
 
 {% for category in site.data.emojis-unicode %}
 # {{ category[0] }}
@@ -22,7 +28,7 @@ layout: default
 
 <table>
     <tr>
-    <th>Emoji</th><th>Markdown</th><th>Unicode</th><th>Description</th>
+    <th stlye="text-align: center">Emoji</th><th>Markdown</th><th>Description</th><th>Unicode</th>
     </tr>
 {% for emoji in subcategory[1] %}
   {% if emoji.unicode.size > 1 %}
@@ -41,7 +47,7 @@ layout: default
   {% endfor %}
   {% if emoji-gh-markdown != null %}
   <tr>
-    <td><img src="{{ emoji_obj.url }}" alt="{{ emoji-gh-markdown }}" class="emoji-img"></td>
+    <td style="text-align:center"><img src="{{ emoji_obj.url }}" alt="{{ emoji-gh-markdown }}" class="emoji-img"></td>
     <td><code class="language-plaintext emoji-code highlighter-rouge">:{{ emoji-gh-markdown }}:</code></td>
     <td>{{ emoji.description }}</td>
     <td>{{ emoji.unicode | join: " " }}</td>

@@ -1,6 +1,49 @@
 img.emoji-img {
     width: 25px;
     vertical-align: bottom;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
-code.emoji-code {
+
+img.emoji-img.rotate-90 {
+    transform: rotate(90deg);
+}
+
+img.emoji-img.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.toc2 {
+    font-size: 14px;
+}
+
+#main_content ul li p {
+    margin: 0px;
+    display: unset;
+}
+#main_content ul li ul li p {
+    margin: 0px;
+    display: unset;
+}
+#main_content ul ul {
+    display: none;
+}
+#main_content ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+#main_content ul li::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    background-image: url(../images/bullet.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(var(--rotation, 0deg));
+    transform-origin: center;
+    vertical-align: middle;
 }
