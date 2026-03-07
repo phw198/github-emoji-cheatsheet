@@ -26,8 +26,19 @@ begin
   FileUtils.mkdir_p('_data')
   
   content = fetch_from_url('https://api.github.com/emojis')
-  emojis = JSON.parse(content)  
-  File.write('_data/emojis.json', JSON.pretty_generate(emojis))
+  emojis = JSON.parse(content)
+  
+  # Extract the unicode value from the filename for each emoji
+  emojis_with_unicode = {}
+  emojis.each do |name, url|
+    unicode = url.split("unicode/").last.split(".png").first
+    emojis_with_unicode[name] = {
+      "url" => url,
+      "unicode" => unicode
+    }
+  end
+  
+  File.write('_data/emojis.json', JSON.pretty_generate(emojis_with_unicode))
   
   puts "✅ Success: Saved #{emojis.length} emojis to _data/emojis.json"
 rescue StandardError => e
