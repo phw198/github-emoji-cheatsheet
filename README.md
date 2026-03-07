@@ -24,6 +24,12 @@ To use the Hacker theme:
     gem "github-pages", group: :jekyll_plugins
     ```
 
+3. Set the location for ruby and its gems to install to:
+```bash
+bundle config path .
+```
+Or edit the `.bundle/config` file contents: `BUNDLE_PATH: "."`
+
 ## Customizing
 
 ### Configuration variables
