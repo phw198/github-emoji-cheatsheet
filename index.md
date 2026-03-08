@@ -36,15 +36,16 @@ layout: default
   {% if category[0] == "Component" %}
     {% continue %}
   {% endif %}
-<li class="toc1"><a href="#anchor-{{ category[0] | slugify }}">{{ category[0] }}</a></li>
-  <ul id="{{ category[0] }}" class="hidden">
-  {% for subcategory in category[1] %}
-    {% if subcategory[0] == "subdivision-flag" %}
-      {% continue %}
-    {% endif %}
-    <li class="toc2"><a href="#anchor-{{ subcategory[0] | slugify }}">{{ subcategory[0] }}</a></li>
-  {% endfor %}
-  </ul>
+  <li class="toc1"><a href="#anchor-{{ category[0] | slugify }}">{{ category[0] }}</a>
+    <ul id="toc-{{ category[0] | replace: ' ', '-' }}" class="hidden">
+    {% for subcategory in category[1] %}
+      {% if subcategory[0] == "subdivision-flag" %}
+        {% continue %}
+      {% endif %}
+      <li class="toc2"><a href="#anchor-{{ subcategory[0] | slugify }}">{{ subcategory[0] }}</a></li>
+    {% endfor %}
+    </ul>
+  </li>
 {% endfor %}
 </ul>
 
@@ -60,7 +61,7 @@ layout: default
     {% continue %}
   {% endif %}
 
-<section class="maincategory" id="{{ category[0] }}" markdown="1">
+<section class="maincategory" id="{{ category[0] | replace: ' ', '-' }}" markdown="1">
 # {{ category[0] }}
 {: #anchor-{{ category[0] | slugify }} }
 
@@ -69,7 +70,7 @@ layout: default
       {% continue %}
     {% endif %}
 
-<section class="subcategory" id="{{ subcategory[0] }}" markdown="1">
+<section class="subcategory" id="subcat-{{ subcategory[0] | replace: ' ', '-' }}" markdown="1">
 
 ## {{ subcategory[0] }}
 {: #anchor-{{ subcategory[0] | slugify }} }

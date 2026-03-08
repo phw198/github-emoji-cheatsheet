@@ -25,7 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             self.style.setProperty('--rotation', newRotation);
-            const nestedList = document.getElementById(self.innerText);
+            const tocId = "toc-" + self.innerText.split("\n")[0].trim().replace(/\s/g, "-")
+            console.log("Toggling nested list for: ", tocId);
+            const nestedList = document.getElementById(tocId);
             if (nestedList) {
                 nestedList.classList.toggle('hidden');
             }
