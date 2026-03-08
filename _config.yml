@@ -1,10 +1,19 @@
-title: GitHub Emoji Cheat Sheet
-description: Dynamic feed of all GitHub emojis
-show_downloads: true
+title: "GitHub Emoji Cheat Sheet: categorized and searchable"
+description: 
+  Always up to date list of all supported GitHub emojis.<br/>
+  Includes emoji names, images, markdown codes and Unicode characters.<br/>
+  Emojis are all categorized and searchable, with convienent click-to-copy emoji to clipboard.
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-hacker
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme
+  - jemoji
 exclude:
   - ruby # exclude the ruby directory and gems from the site build
+  - Gemfile
+  - Gemfile.lock
+  - .travis.yml
+  - docs/
+  - script/

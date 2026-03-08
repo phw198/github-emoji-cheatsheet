@@ -29,7 +29,7 @@ layout: default
 
 :computer_mouse: Click to expand section; Double-click to jump straight to emojis
 
-<script src="{{ '/assets/js/emoji-rotate.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/emoji-functions.js' | relative_url }}"></script>
 
 <ul>
 {% for category in site.data.emojis-unicode %}
@@ -48,7 +48,10 @@ layout: default
 {% endfor %}
 </ul>
 
-<p>&nbsp;</p>
+:ballot_box: Use the [project site](https://github.com/phw198/github-emoji-cheatsheet/issues) to request features or report issues.
+{: style="font-size: 0.9em" }
+
+<p style="margin-top: -1em;">&nbsp;</p>
 ----
 </section>
 
