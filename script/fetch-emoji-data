@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+bundle exec ruby ./script/fetch_emojis.rb 
+bundle exec ruby ./script/parse_emojis_unicode.rb 
