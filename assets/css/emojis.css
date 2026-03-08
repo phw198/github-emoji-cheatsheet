@@ -126,3 +126,8 @@ img.emoji-img.shrink {
     transform-origin: center;
     vertical-align: middle;
 }
+
+p.breakcrumb {
+    text-align: right;
+    margin-top: -3em;
+}

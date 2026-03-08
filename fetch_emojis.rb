@@ -32,9 +32,9 @@ begin
   emojis_with_unicode = {}
   emojis.each do |name, url|
     unicode = url.split("unicode/").last.split(".png").first
-    emojis_with_unicode[name] = {
-      "url" => url,
-      "unicode" => unicode
+    emojis_with_unicode[unicode] = {
+      "name" => name,
+      "url" => url
     }
   end
   

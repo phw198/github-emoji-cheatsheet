@@ -2,7 +2,12 @@
 layout: default
 ---
 
-Double (or right-click) an emoji (or its code) to copy to clipboard
+👀 To copy to clipboard, double click (or right-click):
+* for the markdown code
+  * the emoji 
+  * the markdown code
+* for the emoji itself
+  * the unicode value
 
 
 ## Table of Contents
@@ -13,11 +18,17 @@ Click to expand section; Double-click to jump straight to emojis
 
 <ul>
 {% for category in site.data.emojis-unicode %}
-<li class="toc1"><a href="#{{ category[0] | slugify }}">{{ category[0] }}</a></li>
+  {% if category[0] == "Component" %}
+    {% continue %}
+  {% endif %}
+<li class="toc1"><a href="#anchor-{{ category[0] | slugify }}">{{ category[0] }}</a></li>
   <ul id="{{ category[0] }}" class="hidden">
-{% for subcategory in category[1] %}
-  <li class="toc2"><a href="#{{ subcategory[0] | slugify }}">{{ subcategory[0] }}</a></li>
-{% endfor %}
+  {% for subcategory in category[1] %}
+    {% if subcategory[0] == "subdivision-flag" %}
+      {% continue %}
+    {% endif %}
+    <li class="toc2"><a href="#anchor-{{ subcategory[0] | slugify }}">{{ subcategory[0] }}</a></li>
+  {% endfor %}
   </ul>
 {% endfor %}
 </ul>
@@ -26,11 +37,21 @@ Click to expand section; Double-click to jump straight to emojis
 ----
 
 {% for category in site.data.emojis-unicode %}
+  {% if category[0] == "Component" %}
+    {% continue %}
+  {% endif %}
 # {{ category[0] }}
-{: #{{ category[0] | slugify }} }
+{: #anchor-{{ category[0] | slugify }} }
+
 {% for subcategory in category[1] %}
-## {{ subcategory[0] }}
-{: #{{ subcategory[0] | slugify }} }
+  {% if subcategory[0] == "subdivision-flag" %}
+    {% continue %}
+  {% endif %}
+## {{ subcategory[0] }} 
+{: #anchor-{{ subcategory[0] | slugify }} }
+  
+Back to: [Category](#anchor-{{ category[0] | slugify }}) &#124; [ToC](#table-of-contents) &#124; [Top](#a-title)
+{: .breakcrumb}
 
 <table>
     <tr>
@@ -42,34 +63,25 @@ Click to expand section; Double-click to jump straight to emojis
   {% else %}
     {% assign unicode_key = emoji.unicode | first | downcase %}
   {% endif %}
-  {% for emoji_entry in site.data.emojis %}
-    {% assign emoji-gh-markdown = null %}
-    {% assign emoji_obj = null %}
-    {% if emoji_entry[1].unicode == unicode_key %}
-      {% assign emoji-gh-markdown = emoji_entry[0] %}
-      {% assign emoji_obj = emoji_entry[1] %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
-  {% if emoji-gh-markdown != null %}
+  
+  {% assign emoji_obj = site.data.emojis[unicode_key] %}
+  {% if emoji_obj %}
   <tr>
     <td style="text-align:center">
-      <div class="emoji-container"><img src="{{ emoji_obj.url }}" alt="{{ emoji-gh-markdown }}" class="emoji-img" id="{{ emoji-gh-markdown }}">
+      <div class="emoji-container"><img src="{{ emoji_obj.url }}" alt="{{ emoji_obj.name }}" class="emoji-img" id="{{ emoji_obj.name }}">
         <span class="copy-banner">Copied code!</span>
       </div>
     </td>
-    <td><code class="language-plaintext emoji-markdown highlighter-rouge">:{{ emoji-gh-markdown }}:</code></td>
+    <td><code class="language-plaintext emoji-markdown highlighter-rouge">:{{ emoji_obj.name }}:</code></td>
     <td>{{ emoji.description }}</td>
     <td>
-      <code class="language-plaintext emoji-unicode highlighter-rouge" title="{{ emoji-gh-markdown }}">{{ emoji.unicode | join: " " }}</code>
+      <code class="language-plaintext emoji-unicode highlighter-rouge" title="{{ emoji_obj.name }}"><nobr>{{ emoji.unicode | join: " " }}</nobr></code>
     </td>
   </tr>
   {% endif %}
-{% break %}
 {% endfor %}
 </table>
 
-{% break %}
 {% endfor %}
 {% endfor %}
 
