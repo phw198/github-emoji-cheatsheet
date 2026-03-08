@@ -102,7 +102,7 @@ Back to: [Category](#anchor-{{ category[0] | slugify }}) &#124; [ToC](#table-of-
       <td><code class="language-plaintext emoji-markdown highlighter-rouge">:{{ emoji_obj.name }}:</code></td>
       <td>{{ emoji.description }}</td>
       <td>
-        <code class="language-plaintext emoji-unicode highlighter-rouge" title="{{ emoji_obj.name }}"><nobr>{{ emoji.unicode | join: " " }}</nobr></code>
+        <code class="language-plaintext emoji-unicode highlighter-rouge" title="{{ emoji_obj.name }}">{{ emoji.unicode | join: " " }}</code>
       </td>
     </tr>
       {% endif %}
