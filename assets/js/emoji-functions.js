@@ -1,37 +1,36 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const listItems = document.querySelectorAll('ul li.toc1');
+    const listItems = document.querySelector('ul.toc1');
     const emojiImages = document.querySelectorAll('img.emoji-img');
     const emojiMarkdowns = document.querySelectorAll('code.emoji-markdown');
     const emojiUnicodes = document.querySelectorAll('code.emoji-unicode');
     let clickTimeout = null;
-  
+
     const handleListItemClick = function(e) {
-        const self = this;
-    
         if (e.detail === 1) {
             // Single click - set timeout to toggle, allowing time for double-click detection
             e.preventDefault();
-      
+
             if (clickTimeout) clearTimeout(clickTimeout);
-      
+
             clickTimeout = setTimeout(() => {
-            const currentRotation = self.style.getPropertyValue('--rotation') || '0deg';
-            let newRotation = '0deg';
-            
-            if (currentRotation === '0deg') {
-                newRotation = '90deg';
-            } else if (currentRotation === '90deg') {
-                newRotation = '0deg';
-            }
-            
-            self.style.setProperty('--rotation', newRotation);
-            const tocId = "toc-" + self.innerText.split("\n")[0].trim().replace(/\s/g, "-")
-            console.log("Toggling nested list for: ", tocId);
-            const nestedList = document.getElementById(tocId);
-            if (nestedList) {
-                nestedList.classList.toggle('hidden');
-            }
-        }, 400);
+                const li = e.target.closest('li');
+                const currentRotation = li.style.getPropertyValue('--rotation') || '0deg';
+                let newRotation = '0deg';
+
+                if (currentRotation === '0deg') {
+                    newRotation = '90deg';
+                } else if (currentRotation === '90deg') {
+                    newRotation = '0deg';
+                }
+
+                li.style.setProperty('--rotation', newRotation);
+                const tocId = "toc-" + li.innerText.split("\n")[0].trim().replace(/\s/g, "-")
+                console.log("Toggling nested list for: ", tocId);
+                const nestedList = document.getElementById(tocId);
+                if (nestedList) {
+                    nestedList.classList.toggle('hidden');
+                }
+            }, 400);
 
         } else if (e.detail === 2) {
             // Double-click - clear timeout and allow default navigation
@@ -41,10 +40,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-    listItems.forEach(li => {
-        li.addEventListener('click', handleListItemClick);
+    listItems.addEventListener('click', (event) => {
+        // Find the closest LI that was clicked
+        const li = event.target.closest('li');
+
+        // Ensure the LI is a direct child of .toc1
+        // This ignores clicks on .toc2 because their parent is the nested UL
+        if (li && li.parentElement === listItems) {
+            console.log("Top-level category clicked:", li.firstElementChild.textContent);
+            handleListItemClick(event);
+        }
     });
-  
+
 
     emojiImages.forEach(img => {
         img.addEventListener('dblclick', function(e) {
@@ -107,7 +114,7 @@ function pulseEmoji(self, clipboard) {
     }, { once: true });
 
     copyToClipboard(clipboard);
-    
+
     // Show copied banner
     const banner = self.parentElement.querySelector('.copy-banner');
     if (banner) {
@@ -115,7 +122,7 @@ function pulseEmoji(self, clipboard) {
         banner.classList.remove('show');
         void banner.offsetWidth; // "Magic" trick to restart CSS animations
         banner.classList.add('show');
-        
+
         // Cleanup after animation finishes
         setTimeout(() => {
             banner.classList.remove('show');
@@ -179,11 +186,11 @@ function filterSubcategory(subcategory, searchTerm = "") {
         if (rowText.includes(term)) {
             // Show
             rowMatches = true;
-            row.style.display = ""; 
+            row.style.display = "";
             console.log("Found match in row: ", i);
         } else {
             // Hide
-            row.style.display = "none"; 
+            row.style.display = "none";
         }
     }
     if (!rowMatches) {

@@ -31,12 +31,12 @@ layout: default
 
 <script src="{{ '/assets/js/emoji-functions.js' | relative_url }}"></script>
 
-<ul>
+<ul class="toc1">
 {% for category in site.data.emojis-unicode %}
   {% if category[0] == "Component" %}
     {% continue %}
   {% endif %}
-  <li class="toc1"><a href="#anchor-{{ category[0] | slugify }}">{{ category[0] }}</a>
+  <li><a href="#anchor-{{ category[0] | slugify }}">{{ category[0] }}</a>
     <ul id="toc-{{ category[0] | replace: ' ', '-' }}" class="hidden">
     {% for subcategory in category[1] %}
       {% if subcategory[0] == "subdivision-flag" %}
@@ -76,7 +76,7 @@ layout: default
 {: #anchor-{{ subcategory[0] | slugify }} }
 
 Back to: [Category](#anchor-{{ category[0] | slugify }}) &#124; [ToC](#table-of-contents) &#124; [Top](#a-title)
-{: .breakcrumb}
+{: .breadcrumb}
 
 <table>
     <tr>
