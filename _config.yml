@@ -11,9 +11,10 @@ plugins:
   - jekyll-remote-theme
   - jemoji
 exclude:
-  - ruby # exclude the ruby directory and gems from the site build
   - Gemfile
   - Gemfile.lock
   - .travis.yml
   - docs/
+  - ruby/
   - script/
+  - vendor/
