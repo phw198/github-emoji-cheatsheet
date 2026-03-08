@@ -58,11 +58,14 @@ Click to expand section; Double-click to jump straight to emojis
         <span class="copy-banner">Copied code!</span>
       </div>
     </td>
-    <td><code class="language-plaintext emoji-code highlighter-rouge">:{{ emoji-gh-markdown }}:</code></td>
+    <td><code class="language-plaintext emoji-markdown highlighter-rouge">:{{ emoji-gh-markdown }}:</code></td>
     <td>{{ emoji.description }}</td>
-    <td><code class="language-plaintext emoji-code highlighter-rouge">{{ emoji.unicode | join: " " }}</code></td>
+    <td>
+      <code class="language-plaintext emoji-unicode highlighter-rouge" title="{{ emoji-gh-markdown }}">{{ emoji.unicode | join: " " }}</code>
+    </td>
   </tr>
   {% endif %}
+{% break %}
 {% endfor %}
 </table>
 

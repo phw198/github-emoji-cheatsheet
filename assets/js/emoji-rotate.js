@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const emojiImages = document.querySelectorAll('img.emoji-img');
-    const emojiCodes = document.querySelectorAll('code.emoji-code');
     const listItems = document.querySelectorAll('ul li.toc1');
+    const emojiImages = document.querySelectorAll('img.emoji-img');
+    const emojiMarkdowns = document.querySelectorAll('code.emoji-markdown');
+    const emojiUnicodes = document.querySelectorAll('code.emoji-unicode');
     let clickTimeout = null;
   
     const handleListItemClick = function(e) {
@@ -46,15 +47,15 @@ document.addEventListener('DOMContentLoaded', function() {
     emojiImages.forEach(img => {
         img.addEventListener('dblclick', function(e) {
             e.preventDefault();
-            pulseEmoji(this);
+            pulseEmoji(this, ":"+ this.alt + ":");
         }, false);
         img.addEventListener('contextmenu', function(e) {
             e.preventDefault();
-            pulseEmoji(this);
+            pulseEmoji(this, ":"+ this.alt + ":");
         }, false);
     });
 
-    emojiCodes.forEach(code => {
+    emojiMarkdowns.forEach(code => {
         // code.addEventListener('selectstart', function(e) {
         //     e.preventDefault();
         // }, false);
@@ -69,27 +70,41 @@ document.addEventListener('DOMContentLoaded', function() {
             // } else if (document.selection) {  // IE?
             //     document.selection.empty();
             // }
-            pulseEmoji(document.getElementById(this.innerText.replace(/^:|:$/g,'')));
+            pulseEmoji(document.getElementById(this.innerText.replace(/^:|:$/g,'')), this.innerText);
         }, false);
 
         code.addEventListener('contextmenu', function(e) {
             e.preventDefault();
-            pulseEmoji(document.getElementById(this.innerText.replace(/^:|:$/g,'')));
+            pulseEmoji(document.getElementById(this.innerText.replace(/^:|:$/g,'')), this.innerText);
         }, false);
-    });  
+    });
+
+    emojiUnicodes.forEach(unicode => {
+        unicode.addEventListener('dblclick', function(e) {
+            e.preventDefault();
+            let unicodeInt = parseInt("0x" + this.innerText, 16);
+            unicodeEmoji = String.fromCodePoint(unicodeInt);
+            console.log(this.title);
+            pulseEmoji(document.getElementById(this.title), unicodeEmoji);
+        }, false);
+        unicode.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            let unicodeInt = parseInt("0x" + this.innerText, 16);
+            unicodeEmoji = String.fromCodePoint(unicodeInt);
+            pulseEmoji(this, unicodeEmoji);
+        }, false);
+    });
 });
 
 
-function pulseEmoji(self) {
+function pulseEmoji(self, clipboard) {
     // Pulse animation
     self.classList.add('pulse-animation');
     self.addEventListener('animationend', () => {
         self.classList.remove('pulse-animation');
     }, { once: true });
 
-    // Copy emoji code to clipboard
-    const emojiCode = self.alt;
-    copyToClipboard(":" + emojiCode + ":");
+    copyToClipboard(clipboard);
     
     // Show copied banner
     const banner = self.parentElement.querySelector('.copy-banner');
