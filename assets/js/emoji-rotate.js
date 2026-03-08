@@ -130,3 +130,41 @@ async function copyToClipboard(text) {
         console.error('Failed to copy: ', err);
     }
 }
+
+function filterEmojiTable(searchTerm) {
+    console.log("Filtering emoji table with search term: ", searchTerm);
+
+    // 1. Get all subcategories
+    const subCats = document.querySelectorAll(".subcategory");
+    console.log("Subcategories found: ", subCats.length);
+    for (let subCat = 0; subCat < subCats.length; subCat++) {
+        filterSubcategory(subCats[subCat], searchTerm);
+    }
+}
+
+function filterSubcategory(subcategory, searchTerm) {
+    console.log("Filtering subcategory: ", subcategory.id);
+    const rows = subcategory.querySelectorAll("table tbody tr");
+    const term = searchTerm.toLowerCase();
+
+    // 2. Iterate through rows (starting from index 1 to skip the header)
+    let rowMatches = false;
+    for (let i = 1; i < rows.length; i++) {
+        const row = rows[i];
+        // 3. Get the text from the whole row
+        const rowText = row.textContent.toLowerCase();
+
+        // 4. Toggle visibility based on the match
+        if (rowText.includes(term)) {
+            // Show
+            row.style.display = ""; 
+            rowMatches = true;
+        } else {
+            // Hide
+            row.style.display = "none"; 
+        }
+    }
+    if (!rowMatches) {
+        subcategory.style.display = "none";
+    }
+}
