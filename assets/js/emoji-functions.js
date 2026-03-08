@@ -134,6 +134,12 @@ async function copyToClipboard(text) {
 function filterEmojiTable(searchTerm) {
     console.log("Filtering emoji table with search term: ", searchTerm);
 
+    if (searchTerm) {
+        document.getElementById("toc").style.display = "none";
+    } else {
+        document.getElementById("toc").style.display = "";
+    }
+
     const mainCats = document.querySelectorAll(".maincategory");
     console.log("Main categories found: ", mainCats.length);
     for (let mainCat = 0; mainCat < mainCats.length; mainCat++) {
@@ -155,7 +161,7 @@ function filterEmojiTable(searchTerm) {
     }
 }
 
-function filterSubcategory(subcategory, searchTerm) {
+function filterSubcategory(subcategory, searchTerm = "") {
     console.log("Filtering subcategory: ", subcategory.id);
     const rows = subcategory.querySelectorAll("table tbody tr");
     const term = searchTerm.toLowerCase();
@@ -165,14 +171,14 @@ function filterSubcategory(subcategory, searchTerm) {
     for (let i = 1; i < rows.length; i++) {
         const row = rows[i];
         // Get the text from the whole row
-        const rowText = row.textContent.toLowerCase();
+        const rowText = row.textContent.toLowerCase().replace("copied code!", "");
 
         // Toggle visibility based on the match
         if (rowText.includes(term)) {
             // Show
             rowMatches = true;
             row.style.display = ""; 
-            console.log("Found match in row: ", rowText);
+            console.log("Found match in row: ", i);
         } else {
             // Hide
             row.style.display = "none"; 

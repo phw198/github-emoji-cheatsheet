@@ -3,30 +3,31 @@ layout: default
 ---
 
 👀 To copy to clipboard, double click (or right-click):
-* for the markdown code
+* for the markdown code `:grinning:`
   * the emoji 
   * the markdown code
-* for the emoji itself
+* for the emoji itself :grinning:
   * the unicode value
 
 <div style="position: sticky; top: 0; z-index: 1000; background: #151515 url(../assets/images/bkg.png) 0 0; padding-top: 10px; padding-bottom: 10px;" id="sticky">
-  🔎 <input type="text" id="emojiSearch" placeholder="Search emojis..." size="30">
+  🔎 <input type="text" id="emojiSearch" placeholder="Search emojis..." size="30"><img class="emoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f5d1.png" height="20" width="20" style="vertical-align: middle; cursor: pointer; padding-left: 2px;" onClick="javascript:document.getElementById('emojiSearch').value=''; filterEmojiTable();">
 </div>
 
 <script>
   document.getElementById('emojiSearch').addEventListener('input', function() {
     filterEmojiTable(this.value);
-    });
+  });
 </script>
 
 <p style="line-height: 0em">&nbsp;</p>
 
 ----
 
+<section id="toc" markdown="1">
 ## Table of Contents
 {: style="padding-top:10px"}
 
-Click to expand section; Double-click to jump straight to emojis
+:computer_mouse: Click to expand section; Double-click to jump straight to emojis
 
 <script src="{{ '/assets/js/emoji-rotate.js' | relative_url }}"></script>
 
@@ -49,6 +50,7 @@ Click to expand section; Double-click to jump straight to emojis
 
 <p>&nbsp;</p>
 ----
+</section>
 
 {% for category in site.data.emojis-unicode %}
   {% if category[0] == "Component" %}

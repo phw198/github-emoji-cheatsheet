@@ -131,3 +131,10 @@ p.breakcrumb {
     text-align: right;
     margin-top: -3em;
 }
+
+h1, h2 {
+    scroll-margin-top: 2em;
+}
+header {
+    padding-bottom: 10px;
+}
