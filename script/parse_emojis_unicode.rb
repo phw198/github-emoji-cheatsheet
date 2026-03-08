@@ -1,6 +1,7 @@
+# frozen_string_literal: true
 #!/usr/bin/env ruby
 
-require 'json'
+require "json"
 
 def parse_emojis_unicode(input_file, output_file)
   emojis = {}
@@ -29,10 +30,10 @@ def parse_emojis_unicode(input_file, output_file)
         if parts.length >= 2
           unicode_str = parts[0]
           description = parts[1]
-          
+
           # Split unicode by whitespace into individual elements
           unicode_codes = unicode_str.split(/\s+/)
-          
+
           emojis[current_category][current_subcategory] << {
             unicode: unicode_codes,
             description: description
@@ -49,4 +50,4 @@ def parse_emojis_unicode(input_file, output_file)
 end
 
 # Parse the emojis-unicode.txt file
-parse_emojis_unicode('_data/emojis-unicode.txt', '_data/emojis-unicode.json')
+parse_emojis_unicode("_data/emojis-unicode.txt", "_data/emojis-unicode.json")

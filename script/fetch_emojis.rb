@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 #!/usr/bin/env ruby
 
-require 'net/http'
-require 'json'
-require 'fileutils'
+require "net/http"
+require "json"
+require "fileutils"
 
 def fetch_from_url(url)
   uri = URI(url)
@@ -13,8 +15,8 @@ def fetch_from_url(url)
 
   request = Net::HTTP::Get.new(uri.request_uri)
   response = http.request(request)
-  
-  return response.body if response.code == '200'
+
+  return response.body if response.code == "200"
   raise "HTTP Error: #{response.code}"
 end
 
@@ -23,11 +25,11 @@ end
 puts "🔧 Fetching emojis from GitHub API..."
 begin
   # Create _data directory if it doesn't exist
-  FileUtils.mkdir_p('_data')
-  
-  content = fetch_from_url('https://api.github.com/emojis')
+  FileUtils.mkdir_p("_data")
+
+  content = fetch_from_url("https://api.github.com/emojis")
   emojis = JSON.parse(content)
-  
+
   # Extract the unicode value from the filename for each emoji
   emojis_with_unicode = {}
   emojis.each do |name, url|
@@ -37,9 +39,9 @@ begin
       "url" => url
     }
   end
-  
-  File.write('_data/emojis.json', JSON.pretty_generate(emojis_with_unicode))
-  
+
+  File.write("_data/emojis.json", JSON.pretty_generate(emojis_with_unicode))
+
   puts "✅ Success: Saved #{emojis.length} emojis to _data/emojis.json"
 rescue StandardError => e
   puts "❌ Failed: #{e.message}"
@@ -48,10 +50,10 @@ end
 
 puts "🔧 Fetching emojis Unicode standards..."
 begin
-  emojis_unicode = fetch_from_url('https://unicode.org/emoji/charts/full-emoji-list.txt')
-    
-  File.write('_data/emojis-unicode.txt', emojis_unicode)
-  puts "✅ Success: Saved emojis unicode data to _data/emojis-unicode.txt"  
+  emojis_unicode = fetch_from_url("https://unicode.org/emoji/charts/full-emoji-list.txt")
+
+  File.write("_data/emojis-unicode.txt", emojis_unicode)
+  puts "✅ Success: Saved emojis unicode data to _data/emojis-unicode.txt"
 rescue StandardError => e
   puts "❌ Failed: #{e.message}"
   exit 1
