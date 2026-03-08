@@ -2,6 +2,9 @@
 layout: default
 ---
 
+Double (or right-click) an emoji (or its code) to copy to clipboard
+
+
 ## Table of Contents
 
 Click to expand section; Double-click to jump straight to emojis
@@ -50,10 +53,14 @@ Click to expand section; Double-click to jump straight to emojis
   {% endfor %}
   {% if emoji-gh-markdown != null %}
   <tr>
-    <td style="text-align:center"><img src="{{ emoji_obj.url }}" alt="{{ emoji-gh-markdown }}" class="emoji-img"></td>
+    <td style="text-align:center">
+      <div class="emoji-container"><img src="{{ emoji_obj.url }}" alt="{{ emoji-gh-markdown }}" class="emoji-img" id="{{ emoji-gh-markdown }}">
+        <span class="copy-banner">Copied code!</span>
+      </div>
+    </td>
     <td><code class="language-plaintext emoji-code highlighter-rouge">:{{ emoji-gh-markdown }}:</code></td>
     <td>{{ emoji.description }}</td>
-    <td>{{ emoji.unicode | join: " " }}</td>
+    <td><code class="language-plaintext emoji-code highlighter-rouge">{{ emoji.unicode | join: " " }}</code></td>
   </tr>
   {% endif %}
 {% endfor %}
