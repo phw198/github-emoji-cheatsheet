@@ -9,16 +9,22 @@ layout: default
 * for the emoji itself
   * the unicode value
 
-🔎 <input type="text" id="emojiSearch" placeholder="Search emojis...">
+<div style="position: sticky; top: 0; z-index: 1000; background: #151515 url(../assets/images/bkg.png) 0 0; padding-top: 10px; padding-bottom: 10px;" id="sticky">
+  🔎 <input type="text" id="emojiSearch" placeholder="Search emojis..." size="30">
+</div>
 
 <script>
-    document.getElementById('emojiSearch').addEventListener('input', function() {
-        filterEmojiTable(this.value);
+  document.getElementById('emojiSearch').addEventListener('input', function() {
+    filterEmojiTable(this.value);
     });
 </script>
 
+<p style="line-height: 0em">&nbsp;</p>
+
+----
 
 ## Table of Contents
+{: style="padding-top:10px"}
 
 Click to expand section; Double-click to jump straight to emojis
 
@@ -48,6 +54,8 @@ Click to expand section; Double-click to jump straight to emojis
   {% if category[0] == "Component" %}
     {% continue %}
   {% endif %}
+
+<section class="maincategory" id="{{ category[0] }}" markdown="1">
 # {{ category[0] }}
 {: #anchor-{{ category[0] | slugify }} }
 
@@ -66,7 +74,10 @@ Back to: [Category](#anchor-{{ category[0] | slugify }}) &#124; [ToC](#table-of-
 
 <table>
     <tr>
-    <th style="text-align: center">Emoji</th><th>Markdown</th><th>Description</th><th>Unicode</th>
+      <th style="text-align: center; width:60px">Emoji</th>
+      <th style="text-align: center; width:40%">Markdown</th>
+      <th style="text-align: center; width:40%">Description</th>
+      <th>Unicode</th>
     </tr>
     {% for emoji in subcategory[1] %}
       {% if emoji.unicode.size > 1 %}
@@ -94,5 +105,6 @@ Back to: [Category](#anchor-{{ category[0] | slugify }}) &#124; [ToC](#table-of-
 </table>
 </section>
   {% endfor %}
+</section>
 {% endfor %}
 

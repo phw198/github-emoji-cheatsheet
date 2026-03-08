@@ -134,11 +134,24 @@ async function copyToClipboard(text) {
 function filterEmojiTable(searchTerm) {
     console.log("Filtering emoji table with search term: ", searchTerm);
 
-    // 1. Get all subcategories
-    const subCats = document.querySelectorAll(".subcategory");
-    console.log("Subcategories found: ", subCats.length);
-    for (let subCat = 0; subCat < subCats.length; subCat++) {
-        filterSubcategory(subCats[subCat], searchTerm);
+    const mainCats = document.querySelectorAll(".maincategory");
+    console.log("Main categories found: ", mainCats.length);
+    for (let mainCat = 0; mainCat < mainCats.length; mainCat++) {
+        console.log("Filtering main category: ", mainCats[mainCat].id);
+
+        const subCats = mainCats[mainCat].querySelectorAll(".subcategory");
+        console.log("Subcategories found: ", subCats.length);
+        let subCatMatches = false;
+        for (let subCat = 0; subCat < subCats.length; subCat++) {
+            if (filterSubcategory(subCats[subCat], searchTerm)) {
+                subCatMatches = true;
+            }
+        }
+        if (!subCatMatches) {
+            mainCats[mainCat].style.display = "none";
+        } else {
+            mainCats[mainCat].style.display = "";
+        }
     }
 }
 
@@ -147,24 +160,29 @@ function filterSubcategory(subcategory, searchTerm) {
     const rows = subcategory.querySelectorAll("table tbody tr");
     const term = searchTerm.toLowerCase();
 
-    // 2. Iterate through rows (starting from index 1 to skip the header)
+    // Iterate through rows (starting from index 1 to skip the header)
     let rowMatches = false;
     for (let i = 1; i < rows.length; i++) {
         const row = rows[i];
-        // 3. Get the text from the whole row
+        // Get the text from the whole row
         const rowText = row.textContent.toLowerCase();
 
-        // 4. Toggle visibility based on the match
+        // Toggle visibility based on the match
         if (rowText.includes(term)) {
             // Show
-            row.style.display = ""; 
             rowMatches = true;
+            row.style.display = ""; 
+            console.log("Found match in row: ", rowText);
         } else {
             // Hide
             row.style.display = "none"; 
         }
     }
     if (!rowMatches) {
+        console.log("No matches found in subcategory: ", subcategory.id);
         subcategory.style.display = "none";
+    } else {
+        subcategory.style.display = "";
     }
+    return rowMatches;
 }
