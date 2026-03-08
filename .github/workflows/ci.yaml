@@ -7,7 +7,7 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
     name: Package website
     steps:
