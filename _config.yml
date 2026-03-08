@@ -3,7 +3,7 @@ description:
   Always up to date list of all supported GitHub emojis.<br/>
   Includes emoji names, images, markdown codes and Unicode characters.<br/>
   Emojis are all categorized and searchable, with convienent click-to-copy emoji to clipboard.
-baseurl: ""
+baseurl: "/github-emoji-cheatsheet"
 url: "https://phw198.github.io"
 
 show_downloads: false

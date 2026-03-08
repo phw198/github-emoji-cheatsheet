@@ -3,7 +3,12 @@
 set -e
 
 bundle exec jekyll build
-bundle exec htmlproofer ./_site --check-html --check-sri --disable-external
+
+mkdir -p ./tmp/github-emoji-cheatsheet
+cp -r ./_site/* ./tmp/github-emoji-cheatsheet/
+bundle exec htmlproofer ./tmp --check-html --check-sri --disable-external
+rm -rf ./tmp
+
 bundle exec rubocop -D --config .rubocop.yml
 bundle exec script/validate-html
 gem build jekyll-theme-hacker.gemspec
