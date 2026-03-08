@@ -85,11 +85,7 @@ Back to: [Category](#anchor-{{ category[0] | slugify }}) &#124; [ToC](#table-of-
       <th>Unicode</th>
     </tr>
     {% for emoji in subcategory[1] %}
-      {% if emoji.unicode.size > 1 %}
-        {% capture unicode_key %}{{ emoji.unicode | first | downcase }}-{{ emoji.unicode | last | downcase }}{% endcapture %}
-      {% else %}
-        {% assign unicode_key = emoji.unicode | first | downcase %}
-      {% endif %}
+      {% assign unicode_key = emoji.unicode | downcase %}
   
       {% assign emoji_obj = site.data.emojis[unicode_key] %}
       {% if emoji_obj %}

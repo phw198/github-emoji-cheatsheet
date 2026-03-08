@@ -31,11 +31,12 @@ def parse_emojis_unicode(input_file, output_file)
           unicode_str = parts[0]
           description = parts[1]
 
-          # Split unicode by whitespace into individual elements
-          unicode_codes = unicode_str.split(/\s+/)
+          # Replace special characters in unicode string
+          unicode_str = unicode_str.gsub(/\s200D\s/, "-")
+          unicode_str = unicode_str.gsub(/\s*FE0F\s*/, "")
 
           emojis[current_category][current_subcategory] << {
-            unicode: unicode_codes,
+            unicode: unicode_str,
             description: description
           }
         end
