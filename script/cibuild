@@ -2,6 +2,9 @@
 
 set -e
 
+bundle exec ruby ./script/fetch_emojis.rb 
+bundle exec ruby ./script/parse_emojis_unicode.rb 
+
 bundle exec jekyll build
 bundle exec htmlproofer ./_site --check-html --check-sri
 bundle exec rubocop -D --config .rubocop.yml
