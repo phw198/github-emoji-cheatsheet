@@ -6452,51 +6452,51 @@
     ],
     "keycap": [
       {
-        "unicode": "002320E3",
+        "unicode": "0023-20E3",
         "description": "keycap: #"
       },
       {
-        "unicode": "002A20E3",
+        "unicode": "002A-20E3",
         "description": "keycap: *"
       },
       {
-        "unicode": "003020E3",
+        "unicode": "0030-20E3",
         "description": "keycap: 0"
       },
       {
-        "unicode": "003120E3",
+        "unicode": "0031-20E3",
         "description": "keycap: 1"
       },
       {
-        "unicode": "003220E3",
+        "unicode": "0032-20E3",
         "description": "keycap: 2"
       },
       {
-        "unicode": "003320E3",
+        "unicode": "0033-20E3",
         "description": "keycap: 3"
       },
       {
-        "unicode": "003420E3",
+        "unicode": "0034-20E3",
         "description": "keycap: 4"
       },
       {
-        "unicode": "003520E3",
+        "unicode": "0035-20E3",
         "description": "keycap: 5"
       },
       {
-        "unicode": "003620E3",
+        "unicode": "0036-20E3",
         "description": "keycap: 6"
       },
       {
-        "unicode": "003720E3",
+        "unicode": "0037-20E3",
         "description": "keycap: 7"
       },
       {
-        "unicode": "003820E3",
+        "unicode": "0038-20E3",
         "description": "keycap: 8"
       },
       {
-        "unicode": "003920E3",
+        "unicode": "0039-20E3",
         "description": "keycap: 9"
       },
       {
@@ -6838,1053 +6838,1053 @@
     ],
     "country-flag": [
       {
-        "unicode": "1F1E6 1F1E8",
+        "unicode": "1F1E6-1F1E8",
         "description": "flag: Ascension Island"
       },
       {
-        "unicode": "1F1E6 1F1E9",
+        "unicode": "1F1E6-1F1E9",
         "description": "flag: Andorra"
       },
       {
-        "unicode": "1F1E6 1F1EA",
+        "unicode": "1F1E6-1F1EA",
         "description": "flag: United Arab Emirates"
       },
       {
-        "unicode": "1F1E6 1F1EB",
+        "unicode": "1F1E6-1F1EB",
         "description": "flag: Afghanistan"
       },
       {
-        "unicode": "1F1E6 1F1EC",
+        "unicode": "1F1E6-1F1EC",
         "description": "flag: Antigua & Barbuda"
       },
       {
-        "unicode": "1F1E6 1F1EE",
+        "unicode": "1F1E6-1F1EE",
         "description": "flag: Anguilla"
       },
       {
-        "unicode": "1F1E6 1F1F1",
+        "unicode": "1F1E6-1F1F1",
         "description": "flag: Albania"
       },
       {
-        "unicode": "1F1E6 1F1F2",
+        "unicode": "1F1E6-1F1F2",
         "description": "flag: Armenia"
       },
       {
-        "unicode": "1F1E6 1F1F4",
+        "unicode": "1F1E6-1F1F4",
         "description": "flag: Angola"
       },
       {
-        "unicode": "1F1E6 1F1F6",
+        "unicode": "1F1E6-1F1F6",
         "description": "flag: Antarctica"
       },
       {
-        "unicode": "1F1E6 1F1F7",
+        "unicode": "1F1E6-1F1F7",
         "description": "flag: Argentina"
       },
       {
-        "unicode": "1F1E6 1F1F8",
+        "unicode": "1F1E6-1F1F8",
         "description": "flag: American Samoa"
       },
       {
-        "unicode": "1F1E6 1F1F9",
+        "unicode": "1F1E6-1F1F9",
         "description": "flag: Austria"
       },
       {
-        "unicode": "1F1E6 1F1FA",
+        "unicode": "1F1E6-1F1FA",
         "description": "flag: Australia"
       },
       {
-        "unicode": "1F1E6 1F1FC",
+        "unicode": "1F1E6-1F1FC",
         "description": "flag: Aruba"
       },
       {
-        "unicode": "1F1E6 1F1FD",
+        "unicode": "1F1E6-1F1FD",
         "description": "flag: Åland Islands"
       },
       {
-        "unicode": "1F1E6 1F1FF",
+        "unicode": "1F1E6-1F1FF",
         "description": "flag: Azerbaijan"
       },
       {
-        "unicode": "1F1E7 1F1E6",
+        "unicode": "1F1E7-1F1E6",
         "description": "flag: Bosnia & Herzegovina"
       },
       {
-        "unicode": "1F1E7 1F1E7",
+        "unicode": "1F1E7-1F1E7",
         "description": "flag: Barbados"
       },
       {
-        "unicode": "1F1E7 1F1E9",
+        "unicode": "1F1E7-1F1E9",
         "description": "flag: Bangladesh"
       },
       {
-        "unicode": "1F1E7 1F1EA",
+        "unicode": "1F1E7-1F1EA",
         "description": "flag: Belgium"
       },
       {
-        "unicode": "1F1E7 1F1EB",
+        "unicode": "1F1E7-1F1EB",
         "description": "flag: Burkina Faso"
       },
       {
-        "unicode": "1F1E7 1F1EC",
+        "unicode": "1F1E7-1F1EC",
         "description": "flag: Bulgaria"
       },
       {
-        "unicode": "1F1E7 1F1ED",
+        "unicode": "1F1E7-1F1ED",
         "description": "flag: Bahrain"
       },
       {
-        "unicode": "1F1E7 1F1EE",
+        "unicode": "1F1E7-1F1EE",
         "description": "flag: Burundi"
       },
       {
-        "unicode": "1F1E7 1F1EF",
+        "unicode": "1F1E7-1F1EF",
         "description": "flag: Benin"
       },
       {
-        "unicode": "1F1E7 1F1F1",
+        "unicode": "1F1E7-1F1F1",
         "description": "flag: St. Barthélemy"
       },
       {
-        "unicode": "1F1E7 1F1F2",
+        "unicode": "1F1E7-1F1F2",
         "description": "flag: Bermuda"
       },
       {
-        "unicode": "1F1E7 1F1F3",
+        "unicode": "1F1E7-1F1F3",
         "description": "flag: Brunei"
       },
       {
-        "unicode": "1F1E7 1F1F4",
+        "unicode": "1F1E7-1F1F4",
         "description": "flag: Bolivia"
       },
       {
-        "unicode": "1F1E7 1F1F6",
+        "unicode": "1F1E7-1F1F6",
         "description": "flag: Caribbean Netherlands"
       },
       {
-        "unicode": "1F1E7 1F1F7",
+        "unicode": "1F1E7-1F1F7",
         "description": "flag: Brazil"
       },
       {
-        "unicode": "1F1E7 1F1F8",
+        "unicode": "1F1E7-1F1F8",
         "description": "flag: Bahamas"
       },
       {
-        "unicode": "1F1E7 1F1F9",
+        "unicode": "1F1E7-1F1F9",
         "description": "flag: Bhutan"
       },
       {
-        "unicode": "1F1E7 1F1FB",
+        "unicode": "1F1E7-1F1FB",
         "description": "flag: Bouvet Island"
       },
       {
-        "unicode": "1F1E7 1F1FC",
+        "unicode": "1F1E7-1F1FC",
         "description": "flag: Botswana"
       },
       {
-        "unicode": "1F1E7 1F1FE",
+        "unicode": "1F1E7-1F1FE",
         "description": "flag: Belarus"
       },
       {
-        "unicode": "1F1E7 1F1FF",
+        "unicode": "1F1E7-1F1FF",
         "description": "flag: Belize"
       },
       {
-        "unicode": "1F1E8 1F1E6",
+        "unicode": "1F1E8-1F1E6",
         "description": "flag: Canada"
       },
       {
-        "unicode": "1F1E8 1F1E8",
+        "unicode": "1F1E8-1F1E8",
         "description": "flag: Cocos (Keeling) Islands"
       },
       {
-        "unicode": "1F1E8 1F1E9",
+        "unicode": "1F1E8-1F1E9",
         "description": "flag: Congo - Kinshasa"
       },
       {
-        "unicode": "1F1E8 1F1EB",
+        "unicode": "1F1E8-1F1EB",
         "description": "flag: Central African Republic"
       },
       {
-        "unicode": "1F1E8 1F1EC",
+        "unicode": "1F1E8-1F1EC",
         "description": "flag: Congo - Brazzaville"
       },
       {
-        "unicode": "1F1E8 1F1ED",
+        "unicode": "1F1E8-1F1ED",
         "description": "flag: Switzerland"
       },
       {
-        "unicode": "1F1E8 1F1EE",
+        "unicode": "1F1E8-1F1EE",
         "description": "flag: Côte d’Ivoire"
       },
       {
-        "unicode": "1F1E8 1F1F0",
+        "unicode": "1F1E8-1F1F0",
         "description": "flag: Cook Islands"
       },
       {
-        "unicode": "1F1E8 1F1F1",
+        "unicode": "1F1E8-1F1F1",
         "description": "flag: Chile"
       },
       {
-        "unicode": "1F1E8 1F1F2",
+        "unicode": "1F1E8-1F1F2",
         "description": "flag: Cameroon"
       },
       {
-        "unicode": "1F1E8 1F1F3",
+        "unicode": "1F1E8-1F1F3",
         "description": "flag: China"
       },
       {
-        "unicode": "1F1E8 1F1F4",
+        "unicode": "1F1E8-1F1F4",
         "description": "flag: Colombia"
       },
       {
-        "unicode": "1F1E8 1F1F5",
+        "unicode": "1F1E8-1F1F5",
         "description": "flag: Clipperton Island"
       },
       {
-        "unicode": "1F1E8 1F1F6",
+        "unicode": "1F1E8-1F1F6",
         "description": "flag: Sark"
       },
       {
-        "unicode": "1F1E8 1F1F7",
+        "unicode": "1F1E8-1F1F7",
         "description": "flag: Costa Rica"
       },
       {
-        "unicode": "1F1E8 1F1FA",
+        "unicode": "1F1E8-1F1FA",
         "description": "flag: Cuba"
       },
       {
-        "unicode": "1F1E8 1F1FB",
+        "unicode": "1F1E8-1F1FB",
         "description": "flag: Cape Verde"
       },
       {
-        "unicode": "1F1E8 1F1FC",
+        "unicode": "1F1E8-1F1FC",
         "description": "flag: Curaçao"
       },
       {
-        "unicode": "1F1E8 1F1FD",
+        "unicode": "1F1E8-1F1FD",
         "description": "flag: Christmas Island"
       },
       {
-        "unicode": "1F1E8 1F1FE",
+        "unicode": "1F1E8-1F1FE",
         "description": "flag: Cyprus"
       },
       {
-        "unicode": "1F1E8 1F1FF",
+        "unicode": "1F1E8-1F1FF",
         "description": "flag: Czechia"
       },
       {
-        "unicode": "1F1E9 1F1EA",
+        "unicode": "1F1E9-1F1EA",
         "description": "flag: Germany"
       },
       {
-        "unicode": "1F1E9 1F1EC",
+        "unicode": "1F1E9-1F1EC",
         "description": "flag: Diego Garcia"
       },
       {
-        "unicode": "1F1E9 1F1EF",
+        "unicode": "1F1E9-1F1EF",
         "description": "flag: Djibouti"
       },
       {
-        "unicode": "1F1E9 1F1F0",
+        "unicode": "1F1E9-1F1F0",
         "description": "flag: Denmark"
       },
       {
-        "unicode": "1F1E9 1F1F2",
+        "unicode": "1F1E9-1F1F2",
         "description": "flag: Dominica"
       },
       {
-        "unicode": "1F1E9 1F1F4",
+        "unicode": "1F1E9-1F1F4",
         "description": "flag: Dominican Republic"
       },
       {
-        "unicode": "1F1E9 1F1FF",
+        "unicode": "1F1E9-1F1FF",
         "description": "flag: Algeria"
       },
       {
-        "unicode": "1F1EA 1F1E6",
+        "unicode": "1F1EA-1F1E6",
         "description": "flag: Ceuta & Melilla"
       },
       {
-        "unicode": "1F1EA 1F1E8",
+        "unicode": "1F1EA-1F1E8",
         "description": "flag: Ecuador"
       },
       {
-        "unicode": "1F1EA 1F1EA",
+        "unicode": "1F1EA-1F1EA",
         "description": "flag: Estonia"
       },
       {
-        "unicode": "1F1EA 1F1EC",
+        "unicode": "1F1EA-1F1EC",
         "description": "flag: Egypt"
       },
       {
-        "unicode": "1F1EA 1F1ED",
+        "unicode": "1F1EA-1F1ED",
         "description": "flag: Western Sahara"
       },
       {
-        "unicode": "1F1EA 1F1F7",
+        "unicode": "1F1EA-1F1F7",
         "description": "flag: Eritrea"
       },
       {
-        "unicode": "1F1EA 1F1F8",
+        "unicode": "1F1EA-1F1F8",
         "description": "flag: Spain"
       },
       {
-        "unicode": "1F1EA 1F1F9",
+        "unicode": "1F1EA-1F1F9",
         "description": "flag: Ethiopia"
       },
       {
-        "unicode": "1F1EA 1F1FA",
+        "unicode": "1F1EA-1F1FA",
         "description": "flag: European Union"
       },
       {
-        "unicode": "1F1EB 1F1EE",
+        "unicode": "1F1EB-1F1EE",
         "description": "flag: Finland"
       },
       {
-        "unicode": "1F1EB 1F1EF",
+        "unicode": "1F1EB-1F1EF",
         "description": "flag: Fiji"
       },
       {
-        "unicode": "1F1EB 1F1F0",
+        "unicode": "1F1EB-1F1F0",
         "description": "flag: Falkland Islands"
       },
       {
-        "unicode": "1F1EB 1F1F2",
+        "unicode": "1F1EB-1F1F2",
         "description": "flag: Micronesia"
       },
       {
-        "unicode": "1F1EB 1F1F4",
+        "unicode": "1F1EB-1F1F4",
         "description": "flag: Faroe Islands"
       },
       {
-        "unicode": "1F1EB 1F1F7",
+        "unicode": "1F1EB-1F1F7",
         "description": "flag: France"
       },
       {
-        "unicode": "1F1EC 1F1E6",
+        "unicode": "1F1EC-1F1E6",
         "description": "flag: Gabon"
       },
       {
-        "unicode": "1F1EC 1F1E7",
+        "unicode": "1F1EC-1F1E7",
         "description": "flag: United Kingdom"
       },
       {
-        "unicode": "1F1EC 1F1E9",
+        "unicode": "1F1EC-1F1E9",
         "description": "flag: Grenada"
       },
       {
-        "unicode": "1F1EC 1F1EA",
+        "unicode": "1F1EC-1F1EA",
         "description": "flag: Georgia"
       },
       {
-        "unicode": "1F1EC 1F1EB",
+        "unicode": "1F1EC-1F1EB",
         "description": "flag: French Guiana"
       },
       {
-        "unicode": "1F1EC 1F1EC",
+        "unicode": "1F1EC-1F1EC",
         "description": "flag: Guernsey"
       },
       {
-        "unicode": "1F1EC 1F1ED",
+        "unicode": "1F1EC-1F1ED",
         "description": "flag: Ghana"
       },
       {
-        "unicode": "1F1EC 1F1EE",
+        "unicode": "1F1EC-1F1EE",
         "description": "flag: Gibraltar"
       },
       {
-        "unicode": "1F1EC 1F1F1",
+        "unicode": "1F1EC-1F1F1",
         "description": "flag: Greenland"
       },
       {
-        "unicode": "1F1EC 1F1F2",
+        "unicode": "1F1EC-1F1F2",
         "description": "flag: Gambia"
       },
       {
-        "unicode": "1F1EC 1F1F3",
+        "unicode": "1F1EC-1F1F3",
         "description": "flag: Guinea"
       },
       {
-        "unicode": "1F1EC 1F1F5",
+        "unicode": "1F1EC-1F1F5",
         "description": "flag: Guadeloupe"
       },
       {
-        "unicode": "1F1EC 1F1F6",
+        "unicode": "1F1EC-1F1F6",
         "description": "flag: Equatorial Guinea"
       },
       {
-        "unicode": "1F1EC 1F1F7",
+        "unicode": "1F1EC-1F1F7",
         "description": "flag: Greece"
       },
       {
-        "unicode": "1F1EC 1F1F8",
+        "unicode": "1F1EC-1F1F8",
         "description": "flag: South Georgia & South Sandwich Islands"
       },
       {
-        "unicode": "1F1EC 1F1F9",
+        "unicode": "1F1EC-1F1F9",
         "description": "flag: Guatemala"
       },
       {
-        "unicode": "1F1EC 1F1FA",
+        "unicode": "1F1EC-1F1FA",
         "description": "flag: Guam"
       },
       {
-        "unicode": "1F1EC 1F1FC",
+        "unicode": "1F1EC-1F1FC",
         "description": "flag: Guinea-Bissau"
       },
       {
-        "unicode": "1F1EC 1F1FE",
+        "unicode": "1F1EC-1F1FE",
         "description": "flag: Guyana"
       },
       {
-        "unicode": "1F1ED 1F1F0",
+        "unicode": "1F1ED-1F1F0",
         "description": "flag: Hong Kong SAR China"
       },
       {
-        "unicode": "1F1ED 1F1F2",
+        "unicode": "1F1ED-1F1F2",
         "description": "flag: Heard & McDonald Islands"
       },
       {
-        "unicode": "1F1ED 1F1F3",
+        "unicode": "1F1ED-1F1F3",
         "description": "flag: Honduras"
       },
       {
-        "unicode": "1F1ED 1F1F7",
+        "unicode": "1F1ED-1F1F7",
         "description": "flag: Croatia"
       },
       {
-        "unicode": "1F1ED 1F1F9",
+        "unicode": "1F1ED-1F1F9",
         "description": "flag: Haiti"
       },
       {
-        "unicode": "1F1ED 1F1FA",
+        "unicode": "1F1ED-1F1FA",
         "description": "flag: Hungary"
       },
       {
-        "unicode": "1F1EE 1F1E8",
+        "unicode": "1F1EE-1F1E8",
         "description": "flag: Canary Islands"
       },
       {
-        "unicode": "1F1EE 1F1E9",
+        "unicode": "1F1EE-1F1E9",
         "description": "flag: Indonesia"
       },
       {
-        "unicode": "1F1EE 1F1EA",
+        "unicode": "1F1EE-1F1EA",
         "description": "flag: Ireland"
       },
       {
-        "unicode": "1F1EE 1F1F1",
+        "unicode": "1F1EE-1F1F1",
         "description": "flag: Israel"
       },
       {
-        "unicode": "1F1EE 1F1F2",
+        "unicode": "1F1EE-1F1F2",
         "description": "flag: Isle of Man"
       },
       {
-        "unicode": "1F1EE 1F1F3",
+        "unicode": "1F1EE-1F1F3",
         "description": "flag: India"
       },
       {
-        "unicode": "1F1EE 1F1F4",
+        "unicode": "1F1EE-1F1F4",
         "description": "flag: British Indian Ocean Territory"
       },
       {
-        "unicode": "1F1EE 1F1F6",
+        "unicode": "1F1EE-1F1F6",
         "description": "flag: Iraq"
       },
       {
-        "unicode": "1F1EE 1F1F7",
+        "unicode": "1F1EE-1F1F7",
         "description": "flag: Iran"
       },
       {
-        "unicode": "1F1EE 1F1F8",
+        "unicode": "1F1EE-1F1F8",
         "description": "flag: Iceland"
       },
       {
-        "unicode": "1F1EE 1F1F9",
+        "unicode": "1F1EE-1F1F9",
         "description": "flag: Italy"
       },
       {
-        "unicode": "1F1EF 1F1EA",
+        "unicode": "1F1EF-1F1EA",
         "description": "flag: Jersey"
       },
       {
-        "unicode": "1F1EF 1F1F2",
+        "unicode": "1F1EF-1F1F2",
         "description": "flag: Jamaica"
       },
       {
-        "unicode": "1F1EF 1F1F4",
+        "unicode": "1F1EF-1F1F4",
         "description": "flag: Jordan"
       },
       {
-        "unicode": "1F1EF 1F1F5",
+        "unicode": "1F1EF-1F1F5",
         "description": "flag: Japan"
       },
       {
-        "unicode": "1F1F0 1F1EA",
+        "unicode": "1F1F0-1F1EA",
         "description": "flag: Kenya"
       },
       {
-        "unicode": "1F1F0 1F1EC",
+        "unicode": "1F1F0-1F1EC",
         "description": "flag: Kyrgyzstan"
       },
       {
-        "unicode": "1F1F0 1F1ED",
+        "unicode": "1F1F0-1F1ED",
         "description": "flag: Cambodia"
       },
       {
-        "unicode": "1F1F0 1F1EE",
+        "unicode": "1F1F0-1F1EE",
         "description": "flag: Kiribati"
       },
       {
-        "unicode": "1F1F0 1F1F2",
+        "unicode": "1F1F0-1F1F2",
         "description": "flag: Comoros"
       },
       {
-        "unicode": "1F1F0 1F1F3",
+        "unicode": "1F1F0-1F1F3",
         "description": "flag: St. Kitts & Nevis"
       },
       {
-        "unicode": "1F1F0 1F1F5",
+        "unicode": "1F1F0-1F1F5",
         "description": "flag: North Korea"
       },
       {
-        "unicode": "1F1F0 1F1F7",
+        "unicode": "1F1F0-1F1F7",
         "description": "flag: South Korea"
       },
       {
-        "unicode": "1F1F0 1F1FC",
+        "unicode": "1F1F0-1F1FC",
         "description": "flag: Kuwait"
       },
       {
-        "unicode": "1F1F0 1F1FE",
+        "unicode": "1F1F0-1F1FE",
         "description": "flag: Cayman Islands"
       },
       {
-        "unicode": "1F1F0 1F1FF",
+        "unicode": "1F1F0-1F1FF",
         "description": "flag: Kazakhstan"
       },
       {
-        "unicode": "1F1F1 1F1E6",
+        "unicode": "1F1F1-1F1E6",
         "description": "flag: Laos"
       },
       {
-        "unicode": "1F1F1 1F1E7",
+        "unicode": "1F1F1-1F1E7",
         "description": "flag: Lebanon"
       },
       {
-        "unicode": "1F1F1 1F1E8",
+        "unicode": "1F1F1-1F1E8",
         "description": "flag: St. Lucia"
       },
       {
-        "unicode": "1F1F1 1F1EE",
+        "unicode": "1F1F1-1F1EE",
         "description": "flag: Liechtenstein"
       },
       {
-        "unicode": "1F1F1 1F1F0",
+        "unicode": "1F1F1-1F1F0",
         "description": "flag: Sri Lanka"
       },
       {
-        "unicode": "1F1F1 1F1F7",
+        "unicode": "1F1F1-1F1F7",
         "description": "flag: Liberia"
       },
       {
-        "unicode": "1F1F1 1F1F8",
+        "unicode": "1F1F1-1F1F8",
         "description": "flag: Lesotho"
       },
       {
-        "unicode": "1F1F1 1F1F9",
+        "unicode": "1F1F1-1F1F9",
         "description": "flag: Lithuania"
       },
       {
-        "unicode": "1F1F1 1F1FA",
+        "unicode": "1F1F1-1F1FA",
         "description": "flag: Luxembourg"
       },
       {
-        "unicode": "1F1F1 1F1FB",
+        "unicode": "1F1F1-1F1FB",
         "description": "flag: Latvia"
       },
       {
-        "unicode": "1F1F1 1F1FE",
+        "unicode": "1F1F1-1F1FE",
         "description": "flag: Libya"
       },
       {
-        "unicode": "1F1F2 1F1E6",
+        "unicode": "1F1F2-1F1E6",
         "description": "flag: Morocco"
       },
       {
-        "unicode": "1F1F2 1F1E8",
+        "unicode": "1F1F2-1F1E8",
         "description": "flag: Monaco"
       },
       {
-        "unicode": "1F1F2 1F1E9",
+        "unicode": "1F1F2-1F1E9",
         "description": "flag: Moldova"
       },
       {
-        "unicode": "1F1F2 1F1EA",
+        "unicode": "1F1F2-1F1EA",
         "description": "flag: Montenegro"
       },
       {
-        "unicode": "1F1F2 1F1EB",
+        "unicode": "1F1F2-1F1EB",
         "description": "flag: St. Martin"
       },
       {
-        "unicode": "1F1F2 1F1EC",
+        "unicode": "1F1F2-1F1EC",
         "description": "flag: Madagascar"
       },
       {
-        "unicode": "1F1F2 1F1ED",
+        "unicode": "1F1F2-1F1ED",
         "description": "flag: Marshall Islands"
       },
       {
-        "unicode": "1F1F2 1F1F0",
+        "unicode": "1F1F2-1F1F0",
         "description": "flag: North Macedonia"
       },
       {
-        "unicode": "1F1F2 1F1F1",
+        "unicode": "1F1F2-1F1F1",
         "description": "flag: Mali"
       },
       {
-        "unicode": "1F1F2 1F1F2",
+        "unicode": "1F1F2-1F1F2",
         "description": "flag: Myanmar (Burma)"
       },
       {
-        "unicode": "1F1F2 1F1F3",
+        "unicode": "1F1F2-1F1F3",
         "description": "flag: Mongolia"
       },
       {
-        "unicode": "1F1F2 1F1F4",
+        "unicode": "1F1F2-1F1F4",
         "description": "flag: Macao SAR China"
       },
       {
-        "unicode": "1F1F2 1F1F5",
+        "unicode": "1F1F2-1F1F5",
         "description": "flag: Northern Mariana Islands"
       },
       {
-        "unicode": "1F1F2 1F1F6",
+        "unicode": "1F1F2-1F1F6",
         "description": "flag: Martinique"
       },
       {
-        "unicode": "1F1F2 1F1F7",
+        "unicode": "1F1F2-1F1F7",
         "description": "flag: Mauritania"
       },
       {
-        "unicode": "1F1F2 1F1F8",
+        "unicode": "1F1F2-1F1F8",
         "description": "flag: Montserrat"
       },
       {
-        "unicode": "1F1F2 1F1F9",
+        "unicode": "1F1F2-1F1F9",
         "description": "flag: Malta"
       },
       {
-        "unicode": "1F1F2 1F1FA",
+        "unicode": "1F1F2-1F1FA",
         "description": "flag: Mauritius"
       },
       {
-        "unicode": "1F1F2 1F1FB",
+        "unicode": "1F1F2-1F1FB",
         "description": "flag: Maldives"
       },
       {
-        "unicode": "1F1F2 1F1FC",
+        "unicode": "1F1F2-1F1FC",
         "description": "flag: Malawi"
       },
       {
-        "unicode": "1F1F2 1F1FD",
+        "unicode": "1F1F2-1F1FD",
         "description": "flag: Mexico"
       },
       {
-        "unicode": "1F1F2 1F1FE",
+        "unicode": "1F1F2-1F1FE",
         "description": "flag: Malaysia"
       },
       {
-        "unicode": "1F1F2 1F1FF",
+        "unicode": "1F1F2-1F1FF",
         "description": "flag: Mozambique"
       },
       {
-        "unicode": "1F1F3 1F1E6",
+        "unicode": "1F1F3-1F1E6",
         "description": "flag: Namibia"
       },
       {
-        "unicode": "1F1F3 1F1E8",
+        "unicode": "1F1F3-1F1E8",
         "description": "flag: New Caledonia"
       },
       {
-        "unicode": "1F1F3 1F1EA",
+        "unicode": "1F1F3-1F1EA",
         "description": "flag: Niger"
       },
       {
-        "unicode": "1F1F3 1F1EB",
+        "unicode": "1F1F3-1F1EB",
         "description": "flag: Norfolk Island"
       },
       {
-        "unicode": "1F1F3 1F1EC",
+        "unicode": "1F1F3-1F1EC",
         "description": "flag: Nigeria"
       },
       {
-        "unicode": "1F1F3 1F1EE",
+        "unicode": "1F1F3-1F1EE",
         "description": "flag: Nicaragua"
       },
       {
-        "unicode": "1F1F3 1F1F1",
+        "unicode": "1F1F3-1F1F1",
         "description": "flag: Netherlands"
       },
       {
-        "unicode": "1F1F3 1F1F4",
+        "unicode": "1F1F3-1F1F4",
         "description": "flag: Norway"
       },
       {
-        "unicode": "1F1F3 1F1F5",
+        "unicode": "1F1F3-1F1F5",
         "description": "flag: Nepal"
       },
       {
-        "unicode": "1F1F3 1F1F7",
+        "unicode": "1F1F3-1F1F7",
         "description": "flag: Nauru"
       },
       {
-        "unicode": "1F1F3 1F1FA",
+        "unicode": "1F1F3-1F1FA",
         "description": "flag: Niue"
       },
       {
-        "unicode": "1F1F3 1F1FF",
+        "unicode": "1F1F3-1F1FF",
         "description": "flag: New Zealand"
       },
       {
-        "unicode": "1F1F4 1F1F2",
+        "unicode": "1F1F4-1F1F2",
         "description": "flag: Oman"
       },
       {
-        "unicode": "1F1F5 1F1E6",
+        "unicode": "1F1F5-1F1E6",
         "description": "flag: Panama"
       },
       {
-        "unicode": "1F1F5 1F1EA",
+        "unicode": "1F1F5-1F1EA",
         "description": "flag: Peru"
       },
       {
-        "unicode": "1F1F5 1F1EB",
+        "unicode": "1F1F5-1F1EB",
         "description": "flag: French Polynesia"
       },
       {
-        "unicode": "1F1F5 1F1EC",
+        "unicode": "1F1F5-1F1EC",
         "description": "flag: Papua New Guinea"
       },
       {
-        "unicode": "1F1F5 1F1ED",
+        "unicode": "1F1F5-1F1ED",
         "description": "flag: Philippines"
       },
       {
-        "unicode": "1F1F5 1F1F0",
+        "unicode": "1F1F5-1F1F0",
         "description": "flag: Pakistan"
       },
       {
-        "unicode": "1F1F5 1F1F1",
+        "unicode": "1F1F5-1F1F1",
         "description": "flag: Poland"
       },
       {
-        "unicode": "1F1F5 1F1F2",
+        "unicode": "1F1F5-1F1F2",
         "description": "flag: St. Pierre & Miquelon"
       },
       {
-        "unicode": "1F1F5 1F1F3",
+        "unicode": "1F1F5-1F1F3",
         "description": "flag: Pitcairn Islands"
       },
       {
-        "unicode": "1F1F5 1F1F7",
+        "unicode": "1F1F5-1F1F7",
         "description": "flag: Puerto Rico"
       },
       {
-        "unicode": "1F1F5 1F1F8",
+        "unicode": "1F1F5-1F1F8",
         "description": "flag: Palestinian Territories"
       },
       {
-        "unicode": "1F1F5 1F1F9",
+        "unicode": "1F1F5-1F1F9",
         "description": "flag: Portugal"
       },
       {
-        "unicode": "1F1F5 1F1FC",
+        "unicode": "1F1F5-1F1FC",
         "description": "flag: Palau"
       },
       {
-        "unicode": "1F1F5 1F1FE",
+        "unicode": "1F1F5-1F1FE",
         "description": "flag: Paraguay"
       },
       {
-        "unicode": "1F1F6 1F1E6",
+        "unicode": "1F1F6-1F1E6",
         "description": "flag: Qatar"
       },
       {
-        "unicode": "1F1F7 1F1EA",
+        "unicode": "1F1F7-1F1EA",
         "description": "flag: Réunion"
       },
       {
-        "unicode": "1F1F7 1F1F4",
+        "unicode": "1F1F7-1F1F4",
         "description": "flag: Romania"
       },
       {
-        "unicode": "1F1F7 1F1F8",
+        "unicode": "1F1F7-1F1F8",
         "description": "flag: Serbia"
       },
       {
-        "unicode": "1F1F7 1F1FA",
+        "unicode": "1F1F7-1F1FA",
         "description": "flag: Russia"
       },
       {
-        "unicode": "1F1F7 1F1FC",
+        "unicode": "1F1F7-1F1FC",
         "description": "flag: Rwanda"
       },
       {
-        "unicode": "1F1F8 1F1E6",
+        "unicode": "1F1F8-1F1E6",
         "description": "flag: Saudi Arabia"
       },
       {
-        "unicode": "1F1F8 1F1E7",
+        "unicode": "1F1F8-1F1E7",
         "description": "flag: Solomon Islands"
       },
       {
-        "unicode": "1F1F8 1F1E8",
+        "unicode": "1F1F8-1F1E8",
         "description": "flag: Seychelles"
       },
       {
-        "unicode": "1F1F8 1F1E9",
+        "unicode": "1F1F8-1F1E9",
         "description": "flag: Sudan"
       },
       {
-        "unicode": "1F1F8 1F1EA",
+        "unicode": "1F1F8-1F1EA",
         "description": "flag: Sweden"
       },
       {
-        "unicode": "1F1F8 1F1EC",
+        "unicode": "1F1F8-1F1EC",
         "description": "flag: Singapore"
       },
       {
-        "unicode": "1F1F8 1F1ED",
+        "unicode": "1F1F8-1F1ED",
         "description": "flag: St. Helena"
       },
       {
-        "unicode": "1F1F8 1F1EE",
+        "unicode": "1F1F8-1F1EE",
         "description": "flag: Slovenia"
       },
       {
-        "unicode": "1F1F8 1F1EF",
+        "unicode": "1F1F8-1F1EF",
         "description": "flag: Svalbard & Jan Mayen"
       },
       {
-        "unicode": "1F1F8 1F1F0",
+        "unicode": "1F1F8-1F1F0",
         "description": "flag: Slovakia"
       },
       {
-        "unicode": "1F1F8 1F1F1",
+        "unicode": "1F1F8-1F1F1",
         "description": "flag: Sierra Leone"
       },
       {
-        "unicode": "1F1F8 1F1F2",
+        "unicode": "1F1F8-1F1F2",
         "description": "flag: San Marino"
       },
       {
-        "unicode": "1F1F8 1F1F3",
+        "unicode": "1F1F8-1F1F3",
         "description": "flag: Senegal"
       },
       {
-        "unicode": "1F1F8 1F1F4",
+        "unicode": "1F1F8-1F1F4",
         "description": "flag: Somalia"
       },
       {
-        "unicode": "1F1F8 1F1F7",
+        "unicode": "1F1F8-1F1F7",
         "description": "flag: Suriname"
       },
       {
-        "unicode": "1F1F8 1F1F8",
+        "unicode": "1F1F8-1F1F8",
         "description": "flag: South Sudan"
       },
       {
-        "unicode": "1F1F8 1F1F9",
+        "unicode": "1F1F8-1F1F9",
         "description": "flag: São Tomé & Príncipe"
       },
       {
-        "unicode": "1F1F8 1F1FB",
+        "unicode": "1F1F8-1F1FB",
         "description": "flag: El Salvador"
       },
       {
-        "unicode": "1F1F8 1F1FD",
+        "unicode": "1F1F8-1F1FD",
         "description": "flag: Sint Maarten"
       },
       {
-        "unicode": "1F1F8 1F1FE",
+        "unicode": "1F1F8-1F1FE",
         "description": "flag: Syria"
       },
       {
-        "unicode": "1F1F8 1F1FF",
+        "unicode": "1F1F8-1F1FF",
         "description": "flag: Eswatini"
       },
       {
-        "unicode": "1F1F9 1F1E6",
+        "unicode": "1F1F9-1F1E6",
         "description": "flag: Tristan da Cunha"
       },
       {
-        "unicode": "1F1F9 1F1E8",
+        "unicode": "1F1F9-1F1E8",
         "description": "flag: Turks & Caicos Islands"
       },
       {
-        "unicode": "1F1F9 1F1E9",
+        "unicode": "1F1F9-1F1E9",
         "description": "flag: Chad"
       },
       {
-        "unicode": "1F1F9 1F1EB",
+        "unicode": "1F1F9-1F1EB",
         "description": "flag: French Southern Territories"
       },
       {
-        "unicode": "1F1F9 1F1EC",
+        "unicode": "1F1F9-1F1EC",
         "description": "flag: Togo"
       },
       {
-        "unicode": "1F1F9 1F1ED",
+        "unicode": "1F1F9-1F1ED",
         "description": "flag: Thailand"
       },
       {
-        "unicode": "1F1F9 1F1EF",
+        "unicode": "1F1F9-1F1EF",
         "description": "flag: Tajikistan"
       },
       {
-        "unicode": "1F1F9 1F1F0",
+        "unicode": "1F1F9-1F1F0",
         "description": "flag: Tokelau"
       },
       {
-        "unicode": "1F1F9 1F1F1",
+        "unicode": "1F1F9-1F1F1",
         "description": "flag: Timor-Leste"
       },
       {
-        "unicode": "1F1F9 1F1F2",
+        "unicode": "1F1F9-1F1F2",
         "description": "flag: Turkmenistan"
       },
       {
-        "unicode": "1F1F9 1F1F3",
+        "unicode": "1F1F9-1F1F3",
         "description": "flag: Tunisia"
       },
       {
-        "unicode": "1F1F9 1F1F4",
+        "unicode": "1F1F9-1F1F4",
         "description": "flag: Tonga"
       },
       {
-        "unicode": "1F1F9 1F1F7",
+        "unicode": "1F1F9-1F1F7",
         "description": "flag: Türkiye"
       },
       {
-        "unicode": "1F1F9 1F1F9",
+        "unicode": "1F1F9-1F1F9",
         "description": "flag: Trinidad & Tobago"
       },
       {
-        "unicode": "1F1F9 1F1FB",
+        "unicode": "1F1F9-1F1FB",
         "description": "flag: Tuvalu"
       },
       {
-        "unicode": "1F1F9 1F1FC",
+        "unicode": "1F1F9-1F1FC",
         "description": "flag: Taiwan"
       },
       {
-        "unicode": "1F1F9 1F1FF",
+        "unicode": "1F1F9-1F1FF",
         "description": "flag: Tanzania"
       },
       {
-        "unicode": "1F1FA 1F1E6",
+        "unicode": "1F1FA-1F1E6",
         "description": "flag: Ukraine"
       },
       {
-        "unicode": "1F1FA 1F1EC",
+        "unicode": "1F1FA-1F1EC",
         "description": "flag: Uganda"
       },
       {
-        "unicode": "1F1FA 1F1F2",
+        "unicode": "1F1FA-1F1F2",
         "description": "flag: U.S. Outlying Islands"
       },
       {
-        "unicode": "1F1FA 1F1F3",
+        "unicode": "1F1FA-1F1F3",
         "description": "flag: United Nations"
       },
       {
-        "unicode": "1F1FA 1F1F8",
+        "unicode": "1F1FA-1F1F8",
         "description": "flag: United States"
       },
       {
-        "unicode": "1F1FA 1F1FE",
+        "unicode": "1F1FA-1F1FE",
         "description": "flag: Uruguay"
       },
       {
-        "unicode": "1F1FA 1F1FF",
+        "unicode": "1F1FA-1F1FF",
         "description": "flag: Uzbekistan"
       },
       {
-        "unicode": "1F1FB 1F1E6",
+        "unicode": "1F1FB-1F1E6",
         "description": "flag: Vatican City"
       },
       {
-        "unicode": "1F1FB 1F1E8",
+        "unicode": "1F1FB-1F1E8",
         "description": "flag: St. Vincent & Grenadines"
       },
       {
-        "unicode": "1F1FB 1F1EA",
+        "unicode": "1F1FB-1F1EA",
         "description": "flag: Venezuela"
       },
       {
-        "unicode": "1F1FB 1F1EC",
+        "unicode": "1F1FB-1F1EC",
         "description": "flag: British Virgin Islands"
       },
       {
-        "unicode": "1F1FB 1F1EE",
+        "unicode": "1F1FB-1F1EE",
         "description": "flag: U.S. Virgin Islands"
       },
       {
-        "unicode": "1F1FB 1F1F3",
+        "unicode": "1F1FB-1F1F3",
         "description": "flag: Vietnam"
       },
       {
-        "unicode": "1F1FB 1F1FA",
+        "unicode": "1F1FB-1F1FA",
         "description": "flag: Vanuatu"
       },
       {
-        "unicode": "1F1FC 1F1EB",
+        "unicode": "1F1FC-1F1EB",
         "description": "flag: Wallis & Futuna"
       },
       {
-        "unicode": "1F1FC 1F1F8",
+        "unicode": "1F1FC-1F1F8",
         "description": "flag: Samoa"
       },
       {
-        "unicode": "1F1FD 1F1F0",
+        "unicode": "1F1FD-1F1F0",
         "description": "flag: Kosovo"
       },
       {
-        "unicode": "1F1FE 1F1EA",
+        "unicode": "1F1FE-1F1EA",
         "description": "flag: Yemen"
       },
       {
-        "unicode": "1F1FE 1F1F9",
+        "unicode": "1F1FE-1F1F9",
         "description": "flag: Mayotte"
       },
       {
-        "unicode": "1F1FF 1F1E6",
+        "unicode": "1F1FF-1F1E6",
         "description": "flag: South Africa"
       },
       {
-        "unicode": "1F1FF 1F1F2",
+        "unicode": "1F1FF-1F1F2",
         "description": "flag: Zambia"
       },
       {
-        "unicode": "1F1FF 1F1FC",
+        "unicode": "1F1FF-1F1FC",
         "description": "flag: Zimbabwe"
       }
     ],
     "subdivision-flag": [
       {
-        "unicode": "1F3F4 E0067 E0062 E0065 E006E E0067 E007F",
+        "unicode": "1F3F4-E0067-E0062-E0065-E006E-E0067-E007F",
         "description": "flag: England"
       },
       {
-        "unicode": "1F3F4 E0067 E0062 E0073 E0063 E0074 E007F",
+        "unicode": "1F3F4-E0067-E0062-E0073-E0063-E0074-E007F",
         "description": "flag: Scotland"
       },
       {
-        "unicode": "1F3F4 E0067 E0062 E0077 E006C E0073 E007F",
+        "unicode": "1F3F4-E0067-E0062-E0077-E006C-E0073-E007F",
         "description": "flag: Wales"
       }
     ]

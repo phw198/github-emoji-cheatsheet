@@ -32,8 +32,11 @@ def parse_emojis_unicode(input_file, output_file)
           description = parts[1]
 
           # Replace special characters in unicode string
-          unicode_str = unicode_str.gsub(/\s200D\s/, "-")
-          unicode_str = unicode_str.gsub(/\s*FE0F\s*/, "")
+          unicode_str = unicode_str.gsub(/\sFE0F\s*$/, "")        #FEOF at the end
+          unicode_str = unicode_str.gsub(/\s*FE0F\s200D\s*/, "-") #FEOF 200D in the middle
+          unicode_str = unicode_str.gsub(/\s200D\s/, "-")         #200D in the middle
+          unicode_str = unicode_str.gsub(/\s*FE0F\s*/, "-")       #FEOF in the middle
+          unicode_str = unicode_str.gsub(/\s/, "-")               #Replace any remaining spaces with dashes
 
           emojis[current_category][current_subcategory] << {
             unicode: unicode_str,

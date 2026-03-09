@@ -89,7 +89,9 @@ Back to: [Category](#anchor-{{ category[0] | slugify }}) &#124; [ToC](#table-of-
       {% assign unicode_key = emoji.unicode | downcase %}
   
       {% assign emoji_obj = site.data.emojis[unicode_key] %}
-      {% if emoji_obj %}
+      {% if emoji_obj == null %}
+    <script>console.log("No GitHub emoji match found for: '{{ unicode_key }}' => {{ emoji.description }}");</script>
+      {% else %}
     <tr>
       <td style="text-align:center">
         <div class="emoji-container"><img src="{{ emoji_obj.url }}" alt="{{ emoji_obj.name }}" class="emoji-img" id="{{ emoji_obj.name }}">
