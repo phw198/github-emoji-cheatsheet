@@ -39,9 +39,6 @@ layout: default
   <li><a href="#anchor-{{ category[0] | slugify }}">{{ category[0] }}</a>
     <ul id="toc-{{ category[0] | replace: ' ', '-' }}" class="hidden">
     {% for subcategory in category[1] %}
-      {% if subcategory[0] == "subdivision-flag" %}
-        {% continue %}
-      {% endif %}
       <li class="toc2"><a href="#anchor-{{ subcategory[0] | slugify }}">{{ subcategory[0] }}</a></li>
     {% endfor %}
     </ul>
@@ -66,9 +63,6 @@ layout: default
 {: #anchor-{{ category[0] | slugify }} }
 
   {% for subcategory in category[1] %}
-    {% if subcategory[0] == "subdivision-flag" %}
-      {% continue %}
-    {% endif %}
 
 <section class="subcategory" id="subcat-{{ subcategory[0] | replace: ' ', '-' }}" markdown="1">
 
