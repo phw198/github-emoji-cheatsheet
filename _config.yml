@@ -7,7 +7,7 @@ baseurl: "/github-emoji-cheatsheet"
 url: "https://phw198.github.io"
 
 show_downloads: false
-google_analytics:
+google_analytics: G-36HDCNXFBX
 theme: jekyll-theme-hacker
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
