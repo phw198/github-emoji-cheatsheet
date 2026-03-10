@@ -6,7 +6,7 @@ bundle exec jekyll build
 
 mkdir -p ./tmp/github-emoji-cheatsheet
 cp -r ./_site/* ./tmp/github-emoji-cheatsheet/
-bundle exec htmlproofer ./tmp --check-html --check-sri --disable-external --ignore-urls "/googletagmanager.com/"
+bundle exec htmlproofer ./tmp --check-html --check-sri --disable-external --url-ignore "/googletagmanager.com/"
 rm -rf ./tmp
 
 bundle exec rubocop -D --config .rubocop.yml
