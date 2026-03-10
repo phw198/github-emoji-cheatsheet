@@ -8,6 +8,7 @@ url: "https://phw198.github.io"
 
 show_downloads: false
 google_analytics: G-36HDCNXFBX
+google_adsense: ca-pub-5710461137665920
 theme: jekyll-theme-hacker
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
