@@ -117,7 +117,7 @@ function parseUnicodeToEmoji(self) {
     console.log("Unicode value: ", unicodeValue);
     const unicodeValues = unicodeValue.split(" ").map(u => parseInt(u, 16))
     unicodeEmoji = String.fromCodePoint(...unicodeValues);
-    pulseEmoji(self, unicodeEmoji);
+    pulseEmoji(document.getElementById(self.title), unicodeEmoji);
 }
 
 function pulseEmoji(self, clipboard) {
