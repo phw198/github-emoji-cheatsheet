@@ -40,6 +40,8 @@ def parse_emojis_unicode(input_file, output_file)
 
           emojis[current_category][current_subcategory] << {
             unicode: unicode_str,
+            unicode_original: parts[0],
+            # unicode_int: parts[0].split(" ").map { |u| u.to_i(16) },
             description: description
           }
         end

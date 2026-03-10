@@ -91,20 +91,34 @@ document.addEventListener('DOMContentLoaded', function() {
     emojiUnicodes.forEach(unicode => {
         unicode.addEventListener('dblclick', function(e) {
             e.preventDefault();
-            let unicodeInt = parseInt("0x" + this.innerText, 16);
-            unicodeEmoji = String.fromCodePoint(unicodeInt);
-            console.log(this.title);
-            pulseEmoji(document.getElementById(this.title), unicodeEmoji);
+            parseUnicodeToEmoji(this);
         }, false);
         unicode.addEventListener('contextmenu', function(e) {
             e.preventDefault();
-            let unicodeInt = parseInt("0x" + this.innerText, 16);
-            unicodeEmoji = String.fromCodePoint(unicodeInt);
-            pulseEmoji(this, unicodeEmoji);
+            parseUnicodeToEmoji(this);
         }, false);
     });
 });
 
+window.addEventListener('keydown', function(event) {
+  // Check for 'F' key and either Ctrl (Windows/Linux) or Meta (Mac)
+  if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'f') {
+    console.log("Custom search triggered!");
+    const searchInput = document.getElementById("emojiSearch");
+    if (searchInput) {
+        event.preventDefault();
+        searchInput.focus();
+    }
+  }
+});
+
+function parseUnicodeToEmoji(self) {
+    const unicodeValue = self.innerHTML.split("\n")[1].replace(/<[^>]*>?/gm, "").trim();
+    console.log("Unicode value: ", unicodeValue);
+    const unicodeValues = unicodeValue.split(" ").map(u => parseInt(u, 16))
+    unicodeEmoji = String.fromCodePoint(...unicodeValues);
+    pulseEmoji(self, unicodeEmoji);
+}
 
 function pulseEmoji(self, clipboard) {
     // Pulse animation
