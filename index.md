@@ -2,15 +2,22 @@
 layout: default
 ---
 
+<section markdown="1" style="font-size: small; float: right; margin-top: -8px;">
+Data Sources:
+  - [Unicode Emoji Charts](https://unicode.org/emoji/charts/)
+  - [GitHub Emoji API](https://docs.github.com/en/rest/emojis)
+</section>
+
 👀 To copy to clipboard, double click (or right-click):
 * for the markdown code `:grinning:`
   * the emoji 
   * the markdown code
 * for the emoji itself :grinning:
-  * the unicode value
+  * the unicode value <span style="font-size: small; font-family: cursive"><img class="emoji" alt="point_left" src="https://github.githubassets.com/images/icons/emoji/unicode/1f448.png" height="20" width="20" style="vertical-align: bottom; margin-left: 10px"> this can be pasted anywhere that accepts text!</span>
+  
 
 <div style="position: sticky; top: 0; z-index: 1000; background: #151515 url(assets/images/bkg.png) 0 0; padding-top: 10px; padding-bottom: 10px;" id="sticky">
-  🔎 <input type="text" id="emojiSearch" placeholder="Search emojis..." size="30"><img class="emoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f5d1.png" alt="wastebasket" height="20" width="20" style="vertical-align: middle; cursor: pointer; padding-left: 2px;" onClick="javascript:document.getElementById('emojiSearch').value=''; filterEmojiTable();">
+  <img class="emoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f50e.png" alt="magnifying glass" height="20" width="20" style="vertical-align: middle; padding-right: 3px"><input type="text" id="emojiSearch" placeholder="Search emojis..." size="30"><img class="emoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f5d1.png" alt="wastebasket" height="20" width="20" style="vertical-align: middle; cursor: pointer; padding-left: 2px;" onClick="javascript:document.getElementById('emojiSearch').value=''; filterEmojiTable();">
 </div>
 
 <script>

@@ -111,9 +111,14 @@ img.emoji-img.shrink {
 }
 #main_content ul li {
     list-style: none;
-    cursor: pointer;
 }
 
+#main_content ul.toc1 li::before {
+    cursor: pointer;
+}
+#main_content ul li.toc2::before {
+    cursor: default;
+}
 #main_content ul li::before {
     content: '';
     display: inline-block;
