@@ -25,44 +25,26 @@ To use the Hacker theme:
     ```
 
 3. Set the location for ruby and its gems to install to:
-```bash
-bundle config path .
-```
-Or edit the `.bundle/config` file contents: `BUNDLE_PATH: "."`
+    ```bash
+    bundle config path .
+    ```
+    Or edit the `.bundle/config` file contents: `BUNDLE_PATH: "."`
+
+4. Fetch the Emojis - run this manually for local development; GitHub Actions does this when deployed:-
+    ```bash
+    bundle exec ruby script/fetch_emojis.rb
+    bundle exec ruby script/parse_emojis_unicode.rb
+    bundle exec jekyll serve --incremental
+    ```
 
 ## Customizing
 
-### Configuration variables
-
-Hacker will respect the following variables, if set in your site's `_config.yml`:
-
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
-```
-
-Additionally, you may choose to set the following optional variables:
 
 ```yml
 show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
 google_analytics: [Your Google Analytics tracking ID]
 ```
 
-### Stylesheet
-
-If you'd like to add your own custom styles:
-
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
-
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
-
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
 
 ### Layouts
 
@@ -97,15 +79,8 @@ For more information, see [the Jekyll variables documentation](https://jekyllrb.
 
 ## Roadmap
 
-See the [open issues](https://github.com/pages-themes/hacker/issues) for a list of proposed features (and known issues).
 
-## Project philosophy
 
-The Hacker theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
-
-## Contributing
-
-Interested in contributing to Hacker? We'd love your help. Hacker is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
 
 ### Previewing the theme locally
 
