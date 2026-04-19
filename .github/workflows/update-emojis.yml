@@ -39,7 +39,7 @@ jobs:
           assignees: |
             ${{ github.repository_owner }}
           delete-branch: true
-          paths: |
+          add-paths: |
             _data/emojis.json
             _data/emojis-unicode.txt
             _data/emojis-unicode.json
