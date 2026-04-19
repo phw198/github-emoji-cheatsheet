@@ -1,0 +1,45 @@
+name: Update Emoji Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  refresh-emojis:
+    name: Refresh emoji data and open PR
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Fetch GitHub emoji metadata
+        run: ruby script/fetch_emojis.rb
+
+      - name: Parse Unicode emoji data
+        run: ruby script/parse_emojis_unicode.rb
+
+      - name: Create pull request if emoji data changed
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: Update emoji data files
+          title: Update emoji data files
+          body: |
+            This PR updates the generated emoji data files in `_data`.
+
+            - `_data/emojis.json`
+            - `_data/emojis-unicode.txt`
+            - `_data/emojis-unicode.json`
+          branch: emoji-data-update-${{ github.run_id }}
+          assignees:
+            - ${{ github.repository_owner }}
+          delete-branch: true
+          paths: |
+            _data/emojis.json
+            _data/emojis-unicode.txt
+            _data/emojis-unicode.json
