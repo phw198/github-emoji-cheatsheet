@@ -36,8 +36,8 @@ jobs:
             - `_data/emojis-unicode.txt`
             - `_data/emojis-unicode.json`
           branch: emoji-data-update-${{ github.run_id }}
-          assignees:
-            - ${{ github.repository_owner }}
+          assignees: |
+            ${{ github.repository_owner }}
           delete-branch: true
           paths: |
             _data/emojis.json
