@@ -51,7 +51,15 @@ Data Sources:
     </ul>
   </li>
 {% endfor %}
+  
+  <li> <a href="#anchor-github-only">GitHub Only</a>
+    <ul id="toc-GitHub-Only" class="hidden">
+      <li class="toc2"><a href="#anchor-subcat-uncategorised">Uncategorised</a></li>
+    </ul>
+  </li>
+
 </ul>
+
 
 :ballot_box: Use the [project site](https://github.com/phw198/github-emoji-cheatsheet/issues) to request features or report issues.
 {: style="font-size: 0.9em" }
@@ -114,4 +122,47 @@ Back to: [Category](#anchor-{{ category[0] | slugify }}) &#124; [ToC](#table-of-
   {% endfor %}
 </section>
 {% endfor %}
+
+
+
+<section class="maincategory" id="github-only" markdown="1">
+# GitHub Only
+{: #anchor-github-only }
+
+These emojis are only on GitHub and not yet recognised by the Unicode standard.
+
+<section class="subcategory" id="subcat-uncategorised" markdown="1">
+
+## Uncategorised
+{: #anchor-subcat-uncategorised }
+
+Back to: [ToC](#table-of-contents) &#124; [Top](#a-title)
+{: .breadcrumb}
+
+<table>
+    <tr>
+      <th style="text-align: center; width:60px">Emoji</th>
+      <th style="text-align: center; width:40%">Markdown</th>
+      <th style="text-align: center; width:40%">Description</th>
+      <th>Unicode</th>
+    </tr>
+    {% for emoji_entry in site.data.emojis %}
+      {% assign unicode_key = emoji_entry[0] | downcase | slice: 0, 8 %}
+      {% if unicode_key == "https://" %}
+    <tr>
+      <td style="text-align:center">
+        <div class="emoji-container"><img src="{{ emoji_entry[1].url }}" alt="{{ emoji_entry[1].name }}" class="emoji-img" id="{{ emoji_entry[1].name }}">
+          <span class="copy-banner">Copied code!</span>
+        </div>
+      </td>
+      <td><code class="language-plaintext emoji-markdown highlighter-rouge">:{{ emoji_entry[1].name }}:</code></td>
+      <td></td>
+      <td></td>
+    </tr>
+      {% endif %}
+    {% endfor %}
+</table>
+</section>
+
+</section>
 
